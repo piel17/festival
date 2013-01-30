@@ -39,9 +39,11 @@
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 
+			<?php if( is_front_page() ){ ?>
 			<ul class="slideshow">
 				<?php echo getSlideItem(); ?>
 			</ul>
+			<?php } ?>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
